@@ -1,0 +1,11 @@
+<script>
+
+    function foo(a){
+        if(a){
+            var b=2
+        }
+        console.log(b) // 能够得到2，因为var定义的b会跳出块作用域
+    }
+    foo(true)
+    console.log(b) //ReferenceError 跳不出函数作用域 
+</script>
